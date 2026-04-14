@@ -8,6 +8,8 @@
   --secondary: #1e40af; /* deep indigo */
   --accent: #f0f4ff;    /* soft background */
   --text: #1e293b;
+  --dark: #1e293b;
+  --light: #f8fafc;
 }
 
 
@@ -43,7 +45,7 @@ nav {
   align-items: center;
   max-width: 1100px;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .logo {
@@ -85,7 +87,7 @@ nav {
   align-items: center;
   text-align: center;
   background: 
-    url("./Assets/table\ flower\ dim.jpg") no-repeat center center/cover;
+    url("./Assets/table flower dim.jpg") no-repeat center center/cover;
   color: #fff;
   padding: 2rem;
 }
@@ -159,16 +161,6 @@ h2 {
   transition: transform 0.3s;
 }
 
-.service .fade-in{
-  background-color: orange;
-  color: #ccc;
-
-}
-
-.testimonial-wrapper{
-  background-color: orange;
-}
-
 
 
 
@@ -192,14 +184,19 @@ h2 {
   gap: 1rem;
 }
 
-.project-grid img {
-  width: 100%;
+.project-grid a {
+  display: block;
+  padding: 1rem;
+  background: #fff;
+  text-decoration: none;
+  color: var(--text);
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
-.project-grid img:hover {
-  transform: scale(1.05);
+.project-grid a:hover {
+  transform: translateY(-5px);
 }
 
 /* Testimonials */
@@ -271,6 +268,10 @@ footer {
   padding: 1rem;
 }
 
+footer a {
+  margin: 0 0.5rem;
+}
+
 /* =========================
    Animations
 ========================= */
@@ -337,6 +338,13 @@ img{
   border-radius: 30px;
   
 }
+
+.profile_pix{
+  
+  border-radius: 30px;
+}
+
+
 
 
 #q1{
